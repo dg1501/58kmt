@@ -39,16 +39,18 @@
 ## BÀI LÀM:
 ### 1.Tạo database.
 Bước 1: Bước đầu tiên bạn mở SQL Server Managerment Studio và kết nối đến SQL Server.
+![image](https://github.com/user-attachments/assets/b3a3db88-99eb-4bf4-8832-797ba1028a4d)
 ![image](https://github.com/user-attachments/assets/396f9c1b-ecc4-4038-8bd8-1799ad86e2b5)
 
 Bước 2: Tạo database mới.
-1. Click chuột phải vào DATABASE tại giao diện chính của SQL Server Managerment Studio
+1. Click chuột phải vào DATABASES tại giao diện chính của SQL Server Managerment Studio
 2. Chọn New Database...
 ![image](https://github.com/user-attachments/assets/83b4f309-1c28-44a1-8608-efe659e13e37)
 
 1. Tại phần Database Name: Tiến hành đặt tên cho Database.
-2. Tại phần Database Files: Có thể chọn dấu "..." ở cột Path để thay đổi vị trí lưu các Files LOG và ROWS Data.
-3. Sau đó chọn OK.
+2. Phần Owner có thể để nguyên là Default vì SQL Server sẽ tự động gán chủ sở hữu (owner) của database là tài khoản đang kết nối, thường là tài khoản sa (system adminstratos)
+3. Tại phần Database Files: Có thể chọn dấu "..." ở cột Path để thay đổi vị trí lưu các Files LOG và ROWS Data.
+4. Sau đó chọn OK.
 ![Screenshot (290)](https://github.com/user-attachments/assets/3f0f87f3-7ce6-43ce-a476-6eb670ca101e)
 
 ### 2. Tạo Bảng (TABLE).
@@ -127,6 +129,20 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 + FROM sys.foreign_keys: là bảng hệ thống của SQL Server, chứa thông tin về tất cả các khóa ngoại trong cơ sở dữ liệu.
 + WHERE parent_object_id = OBJECT_ID('dbo.LopSV'): Lọc dữ liệu trong bảng hệ thống sys.foreign_keys, chỉ lấy thông tin về các khóa ngoại của bảng LopSV.
 
+**Làm tương tự với các bảng khác**
+- Bảng GiaoVien(#magv,hoten,NgaySinh,@maBM)
+![Screenshot (321)](https://github.com/user-attachments/assets/8e6d39ee-07c7-4619-b9fa-6653b5a52caf)
 
+- Bảng BoMon(#MaBM,tenBM,@maKhoa)
+![image](https://github.com/user-attachments/assets/c02996df-bdfe-494d-827f-fc2f50bb90e0)
+
+- Bảng LopHP(#maLopHP,TenLopHP,HK,@maMon,@maGV)
+![image](https://github.com/user-attachments/assets/0e9d9ce9-7ba1-4e3c-a679-422ad95aa7a4)
+
+- Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
+![image](https://github.com/user-attachments/assets/6fe08053-8b51-4143-95aa-06400bb0b623)
+
+- Bảng GVCN(#@maLop,#@magv,#HK)
+![image](https://github.com/user-attachments/assets/adafce16-0677-4f51-acca-57d9f013a567)
 
 
