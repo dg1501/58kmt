@@ -56,7 +56,32 @@ Bước 1: Tại DB vừa tạo Click chuột vào, chọn TABLES -> New -> Tabl
 ![Screenshot (293)](https://github.com/user-attachments/assets/25944ef7-6181-48d7-b412-7a7f4f92b4af)
 
 Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường thuộc tính cho bảng.
-+ SinhVien(#masv,hoten,NgaySinh) 
++ Bảng SinhVien(#masv,hoten,NgaySinh) 
 ![Screenshot (296)](https://github.com/user-attachments/assets/02f85043-eeeb-49bc-a5ea-42fa9fa107f0)
 
-+ Lop(#maLop,tenLop)
++ Bảng Lop(#maLop,tenLop)
+![image](https://github.com/user-attachments/assets/e01cb0e1-76b2-4402-b81b-e1d2aa72d2f9)
+
++ Bảng GVCN(#@maLop,#@magv,#HK)
+![image](https://github.com/user-attachments/assets/8b376890-7303-4ab5-8c4b-7f8b81fb703a)
+
++ Bảng LopSV(#@maLop,#@maSV,ChucVu)
+![image](https://github.com/user-attachments/assets/34998b02-e069-4b01-8cf3-ab62c33de01a)
+
++ Bảng GiaoVien(#magv,hoten,NgaySinh,@maBM)
+![image](https://github.com/user-attachments/assets/5298d9b6-f631-435d-aa0e-77dba0b421d4)
+
++ Bảng BoMon(#MaBM,tenBM,@maKhoa)
+![image](https://github.com/user-attachments/assets/c823ac5f-b5c7-4a2c-95ac-d63666c48f59)
+
++ Bảng Khoa(#maKhoa,tenKhoa)
+![image](https://github.com/user-attachments/assets/34c107b3-83ae-42ee-b73a-9c54079e3204)
+
++ Bảng MonHoc(#mamon,Tenmon,STC)
+![image](https://github.com/user-attachments/assets/0e83b4ed-2971-4483-a58d-604ff67cb065)
+
++ Bảng LopHP(#maLopHP,TenLopHP,HK,@maMon,@maGV)
+![image](https://github.com/user-attachments/assets/226b5537-5d54-4312-a083-d18f7e15a8ca)
+
++ Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
+![image](https://github.com/user-attachments/assets/4b984165-2ded-409e-8453-8e283dfc78a2)
