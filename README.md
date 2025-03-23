@@ -67,15 +67,19 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 + Ngược lại: 1 cột có giá trị Null sẽ không bắt buộc phải nhập khi thêm dữ liệu.
 
 **Các kiểu dữ liệu thường gặp khi tạo bảng trong SQL**
-**Numeric**
+
+**NUMERIC**
   - INT: Số nguyên
   - FLOAT: Số thực
   - DECIMAL: Số thực chính xác cao( dùng cho tiền, dữ liệu ,..)
-**String**
+
+**STRING**
   - NCHAR(N): Chuỗi có độ dài thay đổi và không hỗ trợ Unicode
   - NVARCHAR(n): Chuỗi có độ dài thay đổi và hỗ trợ Unicode
-**Date&Time**
+
+**DATE & TIME**
   - DATE: Lưu ngày (YYYY-MM-DD)
+
 
 + Bảng Lop(#maLop,tenLop)
 ![image](https://github.com/user-attachments/assets/e01cb0e1-76b2-4402-b81b-e1d2aa72d2f9)
@@ -110,7 +114,7 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 - Khoá chính(PK) là giá trị duy nhất và không được Null trong bảng.
 - Khoá ngoại(FK) dùng để thiết lập mối quan hệ giữa hai bảng hay nhiều bảng, nó tham chiếu đến khóa chính của một bảng khác, giúp đảm bảo tính toàn vẹn dữ liệu.
 - Khoá ứng viên(CK) là một tập hợp một hoặc nhiều cột trong bảng có khả năng làm khóa chính vì nó đảm bảo duy nhất từng hàng dữ liệu.
-2. Để thiết lập khoá chính PK ta làm theo các bước sau:
+2. Để thiết lập khoá chính PK:  
 **Có 2 cách**
 - Cách 1: Tại bảng ta chọn vào 1 hay nhiều thuộc tính mà ta muốn làm khoá chính, sau đó chọn vào biểu tượng KEY trên thanh công cụ.
 ![Screenshot (314)](https://github.com/user-attachments/assets/8470087e-a852-4189-973e-ffbc861d6b64)
@@ -126,8 +130,10 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 + CONSTRAINT [PK_name] PRIMARY KEY CLUSTERED (): Tạo khóa chính (PRIMARY KEY) cho bảng, đảm bảo giá trị trong khóa chính là duy nhất và không chứa giá trị NULL.
 + [name_thuộc tính] ASC: Xác định thuộc tính làm khoá chính.
 
-3. Thiết lập khoá ngoại FK:
-- Tại giao diện New Query Editor Window như trên, ta thực hiện các lệnh sau để thiết lập FK:
+3. Thiết lập khoá ngoại FK:  
+**Có 2 cách**
+- Cách 1:
++ Tại giao diện New Query Editor Window như trên, ta thực hiện các lệnh sau để thiết lập FK:
 ![image](https://github.com/user-attachments/assets/8773d3a2-c268-4853-96a9-785350b36ed5)
 
 **Giải thích lệnh**
@@ -149,6 +155,24 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 + SELECT name: Chọn cột name, tức là tên của các khóa ngoại trong bảng.
 + FROM sys.foreign_keys: là bảng hệ thống của SQL Server, chứa thông tin về tất cả các khóa ngoại trong cơ sở dữ liệu.
 + WHERE parent_object_id = OBJECT_ID('dbo.LopSV'): Lọc dữ liệu trong bảng hệ thống sys.foreign_keys, chỉ lấy thông tin về các khóa ngoại của bảng LopSV.
+
+- Cách 2:
++ Chọn Relationships như hình dưới
+![Screenshot (332)](https://github.com/user-attachments/assets/0495dc86-1b57-464d-ba22-8c4d0cc80327)
+
++ Tại giao diện tiếp theo: Chọn Add-> thực hiện đổi tên tại Identiny (name) -> sau đó tiến hành thiết lập FK tại Tables and Columns Spec
+![image](https://github.com/user-attachments/assets/a4abdc3f-03c1-4c53-a38e-366f48c66689)  
+
+**Giải thích:** Lấy VD bảng Giao Vien và bảng GVCN
+
+- GiaoVien(#magv, hoten, NgaySinh, @maBM)
++ magv là Primary Key (PK) của bảng GiaoVien, đảm bảo mỗi giáo viên có một mã duy nhất.
+- GVCN(#@maLop, #@magv, HK)
++ maLop và magv cùng tạo thành Primary Key (PK) của bảng GVCN
++ maGV trong GVCN là Foreign Key (FK) tham chiếu đến magv trong bảng GiaoVien, đảm bảo rằng một giáo viên được phân công làm GVCN phải tồn tại trong danh sách GiaoVien.
+![image](https://github.com/user-attachments/assets/b5c0768e-db41-4a18-b22c-4a3c67c78f49)
+
+- Sau khi thực hiện xong các thiết lập -> nhấn tổ hợp phím Ctrl + S để lưu thiết lập.
 
 **Làm tương tự với các bảng khác**
 - Bảng GiaoVien(#magv,hoten,NgaySinh,@maBM)
