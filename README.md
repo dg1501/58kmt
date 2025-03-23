@@ -88,17 +88,18 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 
 ### 3. Thiết lập PK và FK.
 1. Để thiết lập khoá chính PK ta làm theo các bước sau:
-- Có 2 cách
-+ Cách 1: Tại bảng ta chọn vào 1 hay nhiều thuộc tính mà ta muốn làm khoá chính, sau đó chọn vào biểu tượng KEY trên thanh công cụ.
+**Có 2 cách**
+- Cách 1: Tại bảng ta chọn vào 1 hay nhiều thuộc tính mà ta muốn làm khoá chính, sau đó chọn vào biểu tượng KEY trên thanh công cụ.
 ![Screenshot (314)](https://github.com/user-attachments/assets/8470087e-a852-4189-973e-ffbc861d6b64)
 
-+ Cách 2: Tại giao diện Tables, ta chọn vào bảng muốn thiết lập -> Script table as -> CREATE to -> New Query Editor Window
+- Cách 2:
++ Tại giao diện Tables, ta chọn vào bảng muốn thiết lập -> Script table as -> CREATE to -> New Query Editor Window
 ![Screenshot (315)](https://github.com/user-attachments/assets/c2fcaa04-8b8a-46f3-82ae-32ee80a7f0b9)
 
-        : Sau đó ta thực hiện gõ các dòng lệnh như trong hình để thiết lập PK
++ Sau đó ta thực hiện gõ các dòng lệnh như trong hình để thiết lập PK
 ![Screenshot (316)](https://github.com/user-attachments/assets/671da820-ef00-4bd2-8ac1-c0516f0d213c)
 
-- Giải thích lệnh:
+**Giải thích lệnh**
 + CONSTRAINT [PK_name] PRIMARY KEY CLUSTERED (): Tạo khóa chính (PRIMARY KEY) cho bảng, đảm bảo giá trị trong khóa chính là duy nhất và không chứa giá trị NULL.
 + [name_thuộc tính] ASC: Xác định thuộc tính làm khoá chính.
 
@@ -106,7 +107,7 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 - Tại giao diện New Query Editor Window như trên, ta thực hiện các lệnh sau để thiết lập FK:
 ![image](https://github.com/user-attachments/assets/8773d3a2-c268-4853-96a9-785350b36ed5)
 
-- Giải thích lệnh:
+**Giải thích lệnh**
 + ALTER TABLE [dbo].[LopSV] : Chỉnh sửa bảng LopSV
 + ADD CONSTRAINT FK_LopSV_Lop FOREIGN KEY ([malop]) REFERENCES [dbo].[Lop]([malop]): Thêm ràng buộc khóa ngoại (FOREIGN KEY) có tên FK_LopSV_Lop trên cột malop của bảng LopSV.
 
@@ -121,7 +122,7 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 
 - Sau khi thực hiện xong, tại Messages ta sẽ thấy sự ràng buộc của bảng LopSV với các bảng Lop và SinhVien.
 
-- Giải thích lệnh:
+**Giải thích lệnh**
 + SELECT name: Chọn cột name, tức là tên của các khóa ngoại trong bảng.
 + FROM sys.foreign_keys: là bảng hệ thống của SQL Server, chứa thông tin về tất cả các khóa ngoại trong cơ sở dữ liệu.
 + WHERE parent_object_id = OBJECT_ID('dbo.LopSV'): Lọc dữ liệu trong bảng hệ thống sys.foreign_keys, chỉ lấy thông tin về các khóa ngoại của bảng LopSV.
