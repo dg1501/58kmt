@@ -105,7 +105,7 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 
 
 ### 3. Thiết lập PK và FK.
-1. Để thiết lập khoá chính PK ta làm theo các bước sau:
+1. Để thiết lập khoá chính PK ta làm theo các bước sau:  
 **Có 2 cách**
 - Cách 1: Tại bảng ta chọn vào 1 hay nhiều thuộc tính mà ta muốn làm khoá chính, sau đó chọn vào biểu tượng KEY trên thanh công cụ.
 ![Screenshot (314)](https://github.com/user-attachments/assets/8470087e-a852-4189-973e-ffbc861d6b64)
