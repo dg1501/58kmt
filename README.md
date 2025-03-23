@@ -113,7 +113,18 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 - Sau khi thực hiện lệnh ta sẽ thấy " Commands completed successfully. " dưới phần Messages.
 ![Screenshot (319)](https://github.com/user-attachments/assets/1c63cc6f-2695-4d7b-8c1a-773f99a6bb0a)
 
-- Để kiểm tra sự ràng buộc giữa các bảng ta thực hiện lệnh sau: 
+- Để kiểm tra sự ràng buộc giữa các bảng ta thực hiện lệnh:
+"  SELECT name 
+   FROM sys.foreign_keys 
+   WHERE parent_object_id = OBJECT_ID('dbo.LopSV'); "
+![Screenshot (320)](https://github.com/user-attachments/assets/92545d6a-0ab0-4e06-85e4-5e5f6340c36f)
+
+- Sau khi thực hiện xong, tại Messages ta sẽ thấy sự ràng buộc của bảng LopSV với các bảng Lop và SinhVien.
+
+- Giải thích lệnh:
++ SELECT name: Chọn cột name, tức là tên của các khóa ngoại trong bảng.
++ FROM sys.foreign_keys: là bảng hệ thống của SQL Server, chứa thông tin về tất cả các khóa ngoại trong cơ sở dữ liệu.
++ WHERE parent_object_id = OBJECT_ID('dbo.LopSV'): Lọc dữ liệu trong bảng hệ thống sys.foreign_keys, chỉ lấy thông tin về các khóa ngoại của bảng LopSV.
 
 
 
