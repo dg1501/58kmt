@@ -61,6 +61,21 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 + Bảng SinhVien(#masv,hoten,NgaySinh) 
 ![Screenshot (296)](https://github.com/user-attachments/assets/02f85043-eeeb-49bc-a5ea-42fa9fa107f0)
 
+**Lưu ý**: Khi tạo bảng ta sẽ thấy có xuất hiện cột Allow Nulls: Cột này sẽ quyết định xem 1 cột có thể chứa giá trị Null hay không.
++ Cụ thể: 1 cột sẽ bắt buộc phải có giá trị Not Null khi nó là khoá chính hoặc 1 trường quan trọng cần có giá trị.
++ Ngược lại: 1 cột có giá trị Null sẽ không bắt buộc phải nhập khi thêm dữ liệu.
+
+**Các kiểu dữ liệu thường gặp khi tạo bảng trong SQL**
+**Numeric**
+  - INT: Số nguyên
+  - FLOAT: Số thực
+  - DECIMAL: Số thực chính xác cao( dùng cho tiền, dữ liệu ,..)
+**String**
+  - NCHAR(N): Chuỗi có độ dài thay đổi và không hỗ trợ Unicode
+  - NVARCHAR(n): Chuỗi có độ dài thay đổi và hỗ trợ Unicode
+**Date&Time**
+  - DATE: Lưu ngày (YYYY-MM-DD)
+
 + Bảng Lop(#maLop,tenLop)
 ![image](https://github.com/user-attachments/assets/e01cb0e1-76b2-4402-b81b-e1d2aa72d2f9)
 
