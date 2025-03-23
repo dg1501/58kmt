@@ -101,7 +101,8 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 ![image](https://github.com/user-attachments/assets/226b5537-5d54-4312-a083-d18f7e15a8ca)
 
 + Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
-![image](https://github.com/user-attachments/assets/4b984165-2ded-409e-8453-8e283dfc78a2)
+![image](https://github.com/user-attachments/assets/01e09ca6-248c-4fe2-b4e4-1dec645033a3)
+
 
 ### 3. Thiết lập PK và FK.
 1. Để thiết lập khoá chính PK ta làm theo các bước sau:
