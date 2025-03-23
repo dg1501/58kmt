@@ -57,7 +57,8 @@ Bước 2: Tạo database mới.
 Bước 1: Tại DB vừa tạo Click chuột vào, chọn TABLES -> New -> Table...
 ![Screenshot (293)](https://github.com/user-attachments/assets/25944ef7-6181-48d7-b412-7a7f4f92b4af)
 
-Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường thuộc tính cho bảng.
+Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường thuộc tính cho bảng.  
+- Sau khi nhập xong các thuộc tính, chọn kiểu dữ liệu phù hợp và khoá chính -> Nhấn tổ hợp phím Ctrl + S để lưu bảng.
 + Bảng SinhVien(#masv,hoten,NgaySinh) 
 ![Screenshot (296)](https://github.com/user-attachments/assets/02f85043-eeeb-49bc-a5ea-42fa9fa107f0)
 
@@ -105,7 +106,11 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 
 
 ### 3. Thiết lập PK và FK.
-1. Để thiết lập khoá chính PK ta làm theo các bước sau:  
+1. KN
+- Khoá chính(PK) là giá trị duy nhất và không được Null trong bảng.
+- Khoá ngoại(FK) dùng để thiết lập mối quan hệ giữa hai bảng hay nhiều bảng, nó tham chiếu đến khóa chính của một bảng khác, giúp đảm bảo tính toàn vẹn dữ liệu.
+- Khoá ứng viên(CK) là một tập hợp một hoặc nhiều cột trong bảng có khả năng làm khóa chính vì nó đảm bảo duy nhất từng hàng dữ liệu.
+2. Để thiết lập khoá chính PK ta làm theo các bước sau:
 **Có 2 cách**
 - Cách 1: Tại bảng ta chọn vào 1 hay nhiều thuộc tính mà ta muốn làm khoá chính, sau đó chọn vào biểu tượng KEY trên thanh công cụ.
 ![Screenshot (314)](https://github.com/user-attachments/assets/8470087e-a852-4189-973e-ffbc861d6b64)
@@ -121,7 +126,7 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 + CONSTRAINT [PK_name] PRIMARY KEY CLUSTERED (): Tạo khóa chính (PRIMARY KEY) cho bảng, đảm bảo giá trị trong khóa chính là duy nhất và không chứa giá trị NULL.
 + [name_thuộc tính] ASC: Xác định thuộc tính làm khoá chính.
 
-2. Thiết lập khoá ngoại FK:
+3. Thiết lập khoá ngoại FK:
 - Tại giao diện New Query Editor Window như trên, ta thực hiện các lệnh sau để thiết lập FK:
 ![image](https://github.com/user-attachments/assets/8773d3a2-c268-4853-96a9-785350b36ed5)
 
