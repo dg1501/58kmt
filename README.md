@@ -85,3 +85,36 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 
 + Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
 ![image](https://github.com/user-attachments/assets/4b984165-2ded-409e-8453-8e283dfc78a2)
+
+### 3. Thiết lập PK và FK.
+1. Để thiết lập khoá chính PK ta làm theo các bước sau:
+- Có 2 cách
++ Cách 1: Tại bảng ta chọn vào 1 hay nhiều thuộc tính mà ta muốn làm khoá chính, sau đó chọn vào biểu tượng KEY trên thanh công cụ.
+![Screenshot (314)](https://github.com/user-attachments/assets/8470087e-a852-4189-973e-ffbc861d6b64)
+
++ Cách 2: Tại giao diện Tables, ta chọn vào bảng muốn thiết lập -> Script table as -> CREATE to -> New Query Editor Window
+![Screenshot (315)](https://github.com/user-attachments/assets/c2fcaa04-8b8a-46f3-82ae-32ee80a7f0b9)
+
+        : Sau đó ta thực hiện gõ các dòng lệnh như trong hình để thiết lập PK
+![Screenshot (316)](https://github.com/user-attachments/assets/671da820-ef00-4bd2-8ac1-c0516f0d213c)
+
+- Giải thích lệnh:
++ CONSTRAINT [PK_name] PRIMARY KEY CLUSTERED (): Tạo khóa chính (PRIMARY KEY) cho bảng, đảm bảo giá trị trong khóa chính là duy nhất và không chứa giá trị NULL.
++ [name_thuộc tính] ASC: Xác định thuộc tính làm khoá chính.
+
+2. Thiết lập khoá ngoại FK:
+- Tại giao diện New Query Editor Window như trên, ta thực hiện các lệnh sau để thiết lập FK:
+![image](https://github.com/user-attachments/assets/8773d3a2-c268-4853-96a9-785350b36ed5)
+
+- Giải thích lệnh:
++ ALTER TABLE [dbo].[LopSV] : Chỉnh sửa bảng LopSV
++ ADD CONSTRAINT FK_LopSV_Lop FOREIGN KEY ([malop]) REFERENCES [dbo].[Lop]([malop]): Thêm ràng buộc khóa ngoại (FOREIGN KEY) có tên FK_LopSV_Lop trên cột malop của bảng LopSV.
+
+- Sau khi thực hiện lệnh ta sẽ thấy " Commands completed successfully. " dưới phần Messages.
+![Screenshot (319)](https://github.com/user-attachments/assets/1c63cc6f-2695-4d7b-8c1a-773f99a6bb0a)
+
+- Để kiểm tra sự ràng buộc giữa các bảng ta thực hiện lệnh sau: 
+
+
+
+
