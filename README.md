@@ -190,4 +190,56 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 - Bảng GVCN(#@maLop,#@magv,#HK)
 ![image](https://github.com/user-attachments/assets/adafce16-0677-4f51-acca-57d9f013a567)
 
+**Nhập thông tin cho các bảng**
+1. Bảng SinhVien(#masv,hoten,NgaySinh)
+![Screenshot (336)](https://github.com/user-attachments/assets/02e29558-9b7c-4907-b7c8-478646902332)
 
+- Sau khi thực hiện các thao tác như hình trên, ta sẽ được 1 giao diện nhập bảng.
+![Screenshot (338)](https://github.com/user-attachments/assets/0fd24b23-eec6-4923-b74f-75a0a8a3f92e)
+
+**Làm tương tự với các bảng khác*  
+
+2. Bảng Lop(#maLop,tenLop)
+![image](https://github.com/user-attachments/assets/b08b0bcb-e745-4c4a-b347-19c297864aeb)
+
+3. Bảng GVCN(#@maLop,#@magv,#HK)
+![image](https://github.com/user-attachments/assets/7c63e650-cacc-453a-a767-13d23e68974b)
+
+4. Bảng Khoa(#maKhoa,tenKhoa)
+![Screenshot (341)](https://github.com/user-attachments/assets/49c7c6b3-bc57-400b-b6ad-8b11f72c4b1e)
+
+5. Bảng BoMon(#MaBM,tenBM,@maKhoa)
+![image](https://github.com/user-attachments/assets/671fe504-0fca-481e-966f-241f64535042)
+
+6. Bảng GiaoVien(#magv,hoten,NgaySinh,@maBM)
+![image](https://github.com/user-attachments/assets/71caea1a-4d3e-4426-85db-c0cde5a97b69)
+
+7. Bảng LopSV(#@maLop,#@maSV,ChucVu)
+![image](https://github.com/user-attachments/assets/2305addb-59a1-4425-87f4-5f2ccd1ea2a4)
+
+8. Bảng MonHoc(#mamon,Tenmon,STC)
+![image](https://github.com/user-attachments/assets/29dfeab4-8f98-47cf-a6e6-6f625dceb786)
+
+9. Bảng LopHP(#maLopHP,TenLopHP,HK,@maMon,@maGV)
+![image](https://github.com/user-attachments/assets/4d00e9a0-21e1-45f3-928d-7ba301bab39e)
+
+10. Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
+![image](https://github.com/user-attachments/assets/fac7747f-d882-455d-8902-292b1ab94619)
+
+**Tạo ràng buộc kiểm tra**
+- Để tạo ràng buộc kiểm tra cho các thuộc tính trong bảng ta làm như hình sau:
+![Screenshot (350)](https://github.com/user-attachments/assets/cf4b0b58-4adb-4824-91c4-2aef605de2d2)
+
+- Tại giao diện tiếp theo, ta làm các bước sau:
+![Screenshot (351)](https://github.com/user-attachments/assets/3ad3eb4a-c99a-42fd-bb7a-f2bcc39edcf9)
+
+- Sau khi hoàn thành, ta quay lại table và kiểm tra ràng buộc.
+![Screenshot (352)](https://github.com/user-attachments/assets/2e27825a-03e2-486f-b1d6-a4ea336a60c7)
+
++ Dựa vào ràng buộc như trên ta sẽ kiểm tra tại cột hoten.
+![Screenshot (353)](https://github.com/user-attachments/assets/6a892399-be6d-4704-bfa0-f44b4d3d0e3f)
+
++ Sau khi thay đổi
+![image](https://github.com/user-attachments/assets/82e26b06-f9eb-475e-ade3-291610decab5)
+
+- Những bảng khác ta làm tương tự:
