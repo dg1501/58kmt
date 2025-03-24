@@ -203,7 +203,7 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 ![image](https://github.com/user-attachments/assets/b08b0bcb-e745-4c4a-b347-19c297864aeb)
 
 3. Bảng GVCN(#@maLop,#@magv,#HK)
-![image](https://github.com/user-attachments/assets/7c63e650-cacc-453a-a767-13d23e68974b)
+![Screenshot (374)](https://github.com/user-attachments/assets/a5e760be-a549-4277-a51a-10fdc6bb5d37)
 
 4. Bảng Khoa(#maKhoa,tenKhoa)
 ![Screenshot (341)](https://github.com/user-attachments/assets/49c7c6b3-bc57-400b-b6ad-8b11f72c4b1e)
@@ -221,9 +221,9 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 ![image](https://github.com/user-attachments/assets/29dfeab4-8f98-47cf-a6e6-6f625dceb786)
 
 9. Bảng LopHP(#maLopHP,TenLopHP,HK,@maMon,@maGV)
-![image](https://github.com/user-attachments/assets/4d00e9a0-21e1-45f3-928d-7ba301bab39e)
+![Screenshot (375)](https://github.com/user-attachments/assets/64fd27cb-2236-401d-b803-247519465b1a)
 
-10. Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
+11. Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
 ![image](https://github.com/user-attachments/assets/fac7747f-d882-455d-8902-292b1ab94619)
 
 **Tạo ràng buộc kiểm tra**
@@ -242,4 +242,30 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 + Sau khi thay đổi
 ![image](https://github.com/user-attachments/assets/82e26b06-f9eb-475e-ade3-291610decab5)
 
-- Những bảng khác ta làm tương tự:
+**Những bảng khác ta làm tương tự*
+- Bảng Lop(#maLop,tenLop)
+![Screenshot (363)](https://github.com/user-attachments/assets/8cc74fcb-d709-4b63-99bb-8a6ca9707778)
+
+- Bảng GVCN(#@maLop,#@magv,#HK)
+![Screenshot (369)](https://github.com/user-attachments/assets/49c47a14-d195-452e-8911-3c977101d7b2)
+
+- Bảng LopSV(#@maLop,#@maSV,ChucVu)
+![Screenshot (364)](https://github.com/user-attachments/assets/91ac07bf-9794-4e03-a846-27d347083435)
+
+- Bảng GiaoVien(#magv,hoten,NgaySinh,@maBM)
+![Screenshot (365)](https://github.com/user-attachments/assets/9a27912c-35e9-4030-ab0e-32b4a06a803e)
+
+- Bảng BoMon(#MaBM,tenBM,@maKhoa)
+![Screenshot (366)](https://github.com/user-attachments/assets/33847da9-c3a0-478c-ad86-91ff2862c5b2)
+
+- Bảng Khoa(#maKhoa,tenKhoa)
+![Screenshot (367)](https://github.com/user-attachments/assets/06d952b5-8a25-48d0-94fb-0bff00e987a7)
+
+- Bảng MonHoc(#mamon,Tenmon,STC)
+![Screenshot (368)](https://github.com/user-attachments/assets/c1c826ed-0836-435a-9d4c-3cef5b261c54)
+
+- Bảng LopHP(#maLopHP,TenLopHP,HK,@maMon,@maGV)
+![Screenshot (371)](https://github.com/user-attachments/assets/02db1948-37dc-4083-8a4f-6e95dd4115d0)
+
+- Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
+![Screenshot (373)](https://github.com/user-attachments/assets/a1512a42-05c2-4286-af7a-65314c9a8c47)
