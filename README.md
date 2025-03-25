@@ -3,7 +3,8 @@
 ## DEALINE: 23H59 NGÀY 25/03/2025
 ## ĐIỀU KIỆN: (ĐÃ LÀM XONG BÀI 1)
 1. Đã cài đặt SQL Server 2022 Dev.
-2. Đã cài đặt SQL Managerment Studio bản mới nhất.
+2. Đã cài đặt SQL Managerment Studio bản mới nhất.![Screenshot (400)](https://github.com/user-attachments/assets/142d7535-58f3-4312-adb3-91cf3f712f7c)
+
 3. Đã kết nối từ SQL Managerment Studio vào SQL Server.
 4. Đã có tài khoản github, biết cách tạo repository(kho lưu trữ) cho phép truy cập public.
 ## BÀI TOÁN:
