@@ -111,9 +111,9 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 
 ### 3. Thiết lập PK và FK.
 1. KN
-- Khoá chính(PK) là giá trị duy nhất và không được Null trong bảng.
-- Khoá ngoại(FK) dùng để thiết lập mối quan hệ giữa hai bảng hay nhiều bảng, nó tham chiếu đến khóa chính của một bảng khác, giúp đảm bảo tính toàn vẹn dữ liệu.
-- Khoá ứng viên(CK) là một tập hợp một hoặc nhiều cột trong bảng có khả năng làm khóa chính vì nó đảm bảo duy nhất từng hàng dữ liệu.
+- Khoá chính(PK): là giá trị duy nhất và không được Null trong bảng.
+- Khoá ngoại(FK): trường của 1 bảng A được gọi là khoá ngoại với bảng B khi nó là toàn bộ khoá chính của bảng B. giá trị nhập cho FK phải nằm trong tập giá trị của khoá chính trong bảng B.
+- Khoá ứng viên(CK): là một tập hợp một hoặc nhiều cột trong bảng có khả năng làm khóa chính vì nó đảm bảo duy nhất từng hàng dữ liệu.
 2. Để thiết lập khoá chính PK:  
 **Có 2 cách**
 - Cách 1: Tại bảng ta chọn vào 1 hay nhiều thuộc tính mà ta muốn làm khoá chính, sau đó chọn vào biểu tượng KEY trên thanh công cụ.
