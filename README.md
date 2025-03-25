@@ -176,19 +176,31 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 
 **Làm tương tự với các bảng khác**
 - Bảng GiaoVien(#magv,hoten,NgaySinh,@maBM)
-![Screenshot (321)](https://github.com/user-attachments/assets/8e6d39ee-07c7-4619-b9fa-6653b5a52caf)
+![image](https://github.com/user-attachments/assets/482b2522-1208-4e19-b459-fd8b77bb67eb)
 
 - Bảng BoMon(#MaBM,tenBM,@maKhoa)
-![image](https://github.com/user-attachments/assets/c02996df-bdfe-494d-827f-fc2f50bb90e0)
+![Screenshot (377)](https://github.com/user-attachments/assets/5fa6ec41-8d0b-4585-a49e-65904318a015)
 
 - Bảng LopHP(#maLopHP,TenLopHP,HK,@maMon,@maGV)
-![image](https://github.com/user-attachments/assets/0e9d9ce9-7ba1-4e3c-a679-422ad95aa7a4)
+![image](https://github.com/user-attachments/assets/9ebd43d1-4a84-4e16-8f11-48011105e1c1)
 
 - Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
-![image](https://github.com/user-attachments/assets/6fe08053-8b51-4143-95aa-06400bb0b623)
+![image](https://github.com/user-attachments/assets/93db9891-ad45-4255-8783-46e51d48a372)
 
-- Bảng GVCN(#@maLop,#@magv,#HK)
-![image](https://github.com/user-attachments/assets/adafce16-0677-4f51-acca-57d9f013a567)
+- Bảng LopSV(#@maLop,#@maSV,ChucVu)
+![image](https://github.com/user-attachments/assets/ddf2932e-341c-49e4-9aa2-15016000da6c)
+
+- Bảng Khoa(#maKhoa,tenKhoa)
+![image](https://github.com/user-attachments/assets/b9be4cdf-5614-4316-b532-53ca77a37463)
+
+- Bảng Lop(#maLop,tenLop)
+![image](https://github.com/user-attachments/assets/924ad442-7a6d-4065-ad43-35fd9f4bb697)
+
+- Bảng MonHoc(#mamon,Tenmon,STC)
+![image](https://github.com/user-attachments/assets/2f8b39d7-f16a-49de-bbe5-7cf337d9ef43)
+
+- Bảng SinhVien(#masv,hoten,NgaySinh)
+![image](https://github.com/user-attachments/assets/e16a01a8-bd24-4c63-a581-770084c7199f)
 
 **Nhập thông tin cho các bảng**
 1. Bảng SinhVien(#masv,hoten,NgaySinh)
@@ -269,3 +281,5 @@ Bước 2: Tại giao diện tiếp theo, ta tiến hành nhập các trường 
 
 - Bảng DKMH(#@maLopHP,#@maSV,DiemTP,DiemThi,PhanTramThi)
 ![Screenshot (373)](https://github.com/user-attachments/assets/a1512a42-05c2-4286-af7a-65314c9a8c47)
+
+# HẾT
