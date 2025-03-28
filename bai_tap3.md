@@ -37,15 +37,15 @@
 
 ## BÀI LÀM 
 # 1. Sửa bảng DKMH và bảng Điểm từ BÀI TẬP 2 để có các bảng như yêu cầu.
-1.1. Sửa bảng DKMH ( xoá trường DiemTP -> Thêm trường ID_dk )
+- 1.1. Sửa bảng DKMH ( xoá trường DiemTP -> Thêm trường ID_dk )
 ![Screenshot (404)](https://github.com/user-attachments/assets/a970b95a-f876-4d1d-967a-03fdcd46888c)
 
-1.2. Tạo bảng Diem(#id, @id_dk, diem)
-1.2.1. Thao tác tạo new table
+- 1.2. Tạo bảng Diem(#id, @id_dk, diem)
++ 1.2.1. Thao tác tạo new table
 ![Screenshot (408)](https://github.com/user-attachments/assets/5348ded5-9675-4fb1-807f-67f0af7b2021)
 
-1.2.2. Tạo bảng 
++ 1.2.2. Tạo bảng 
 ![Screenshot (409)](https://github.com/user-attachments/assets/b17a1702-37d8-4318-b4c6-4c2830aa62a5)
 
-2.1. Nhập dữ liệu demo cho các bảng
+- 2.1. Nhập dữ liệu demo cho các bảng
 
