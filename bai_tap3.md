@@ -36,7 +36,7 @@
 ## DEADLINE: 23H59 NGÀY 30/03/2025
 
 ## BÀI LÀM 
-# 1. Sửa bảng DKMH và bảng Điểm từ BÀI TẬP 2 để có các bảng như yêu cầu.
+### 1. Sửa bảng DKMH và bảng Điểm từ BÀI TẬP 2 để có các bảng như yêu cầu.
 - 1.1. Sửa bảng DKMH ( xoá trường DiemTP -> Thêm trường ID_dk )
 ![Screenshot (404)](https://github.com/user-attachments/assets/a970b95a-f876-4d1d-967a-03fdcd46888c)
 
@@ -57,7 +57,7 @@
 + Diem(#id, @id_dk, diem)
 ![Screenshot (421)](https://github.com/user-attachments/assets/e7526af4-d038-40d7-a021-3d2fea49a2c1)
 
-# 2. Tạo FK giữa 2 bảng DKMH và Diem 
+### 2. Tạo FK giữa 2 bảng DKMH và Diem 
 - 2.1. Thao tác tạo khoá ngoại (FK)
 ![Screenshot (422)](https://github.com/user-attachments/assets/dd0d5c35-6282-48d6-91e9-66d04cfe287b)
 
@@ -67,7 +67,7 @@
 - 2.3. Kiểm tra bảng DKMH
 ![Screenshot (426)](https://github.com/user-attachments/assets/41a7c5e2-368a-4970-8606-bc6d5db8ba51)
 
-# 3. Thêm CK cho trường điểm tại bảng Diem
+### 3. Thêm CK cho trường điểm tại bảng Diem
 - 3.1. Thao tác thêm CK
 ![Screenshot (428)](https://github.com/user-attachments/assets/94dae84e-6778-4f3e-9a0b-533dd8f96718)
 
@@ -75,4 +75,14 @@
 ![Screenshot (431)](https://github.com/user-attachments/assets/f7a0b688-72b5-4c16-8215-be4005df23b3)
 
 - 3.3. Kiểm tra CK
+![Screenshot (433)](https://github.com/user-attachments/assets/25542774-e687-486a-beab-919dc8d1f02a)
+
+### 4. Tạo Diagram mô tả các PK, FK của Database
+- 4.1. Thao tác tạo diagram
+![Screenshot (434)](https://github.com/user-attachments/assets/3bbe76e9-f66f-4197-ae27-cef6afb5da4f)
+
+- 4.2. Kết quả
+![Screenshot (438)](https://github.com/user-attachments/assets/14387190-e7fa-4b25-a1c5-b983402634a2)
+
+### 5. Viết lệnh truy vấn để: Tính được điểm thành phần của 1 sinh viên đang học tại 1 lớp học phần
 
