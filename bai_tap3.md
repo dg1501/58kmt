@@ -47,8 +47,23 @@
 + 1.2.2. Tạo bảng 
 ![Screenshot (409)](https://github.com/user-attachments/assets/b17a1702-37d8-4318-b4c6-4c2830aa62a5)
 
-- 2.1. Nhập dữ liệu demo cho các bảng
+- 1.3. Nhập dữ liệu demo cho các bảng
 ![Screenshot (411)](https://github.com/user-attachments/assets/673c1485-66dd-4f58-83e2-eeb2b5231b48)
 
-- 2.1.1. Hình ảnh TABLE sau khi hoàn thành
-- 
+- 1.3.1. Hình ảnh 2 bảng sau khi hoàn thành
++ DKMH(#id_dk, @maLopHP,@maSV,DiemThi,PhanTramThi)
+![Screenshot (420)](https://github.com/user-attachments/assets/23bb36e3-5d90-4a4e-b65a-8b94c4205c96)
+
++ Diem(#id, @id_dk, diem)
+![Screenshot (421)](https://github.com/user-attachments/assets/e7526af4-d038-40d7-a021-3d2fea49a2c1)
+
+# 2. Tạo FK giữa 2 bảng DKMH và Diem 
+- 2.1. Thao tác tạo khoá ngoại (FK)
+![Screenshot (422)](https://github.com/user-attachments/assets/dd0d5c35-6282-48d6-91e9-66d04cfe287b)
+
+- 2.2. Thiết lập khoá ngoại
+![Screenshot (423)](https://github.com/user-attachments/assets/204371f2-3b1d-4857-881b-7e55daa51f65)
+
+- 2.3. Kiểm tra bảng DKMH
+![Screenshot (426)](https://github.com/user-attachments/assets/41a7c5e2-368a-4970-8606-bc6d5db8ba51)
+
