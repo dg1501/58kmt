@@ -67,3 +67,12 @@
 - 2.3. Kiểm tra bảng DKMH
 ![Screenshot (426)](https://github.com/user-attachments/assets/41a7c5e2-368a-4970-8606-bc6d5db8ba51)
 
+# 3. Thêm CK cho trường điểm tại bảng Diem
+- 3.1. Thao tác thêm CK
+![Screenshot (428)](https://github.com/user-attachments/assets/94dae84e-6778-4f3e-9a0b-533dd8f96718)
+
+- 3.2. Thêm CK cho trường điểm
+![Screenshot (431)](https://github.com/user-attachments/assets/f7a0b688-72b5-4c16-8215-be4005df23b3)
+
+- 3.3. Kiểm tra CK
+
