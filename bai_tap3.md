@@ -78,7 +78,7 @@
 ![Screenshot (433)](https://github.com/user-attachments/assets/25542774-e687-486a-beab-919dc8d1f02a)
 
 ### 4. Tạo Diagram mô tả các PK, FK của Database
-- 4.1. Thao tác tạo diagram
+- 4.1. Thao tác tạo Diagram
 ![Screenshot (434)](https://github.com/user-attachments/assets/3bbe76e9-f66f-4197-ae27-cef6afb5da4f)
 
 - 4.2. Kết quả
