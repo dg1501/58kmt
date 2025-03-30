@@ -85,4 +85,15 @@
 ![Screenshot (438)](https://github.com/user-attachments/assets/14387190-e7fa-4b25-a1c5-b983402634a2)
 
 ### 5. Viết lệnh truy vấn để: Tính được điểm thành phần của 1 sinh viên đang học tại 1 lớp học phần
+- 5.1. Thao tác thực hiện
+![Screenshot (441)](https://github.com/user-attachments/assets/5500d1d8-0ded-4dfb-b9f4-689d935759fd)
+
+- 5.2. Thực hiện viết lệnh truy vấn: tính điểm thành phần
+![Screenshot (444)](https://github.com/user-attachments/assets/7052395a-e314-4916-971d-ad8830dc084b)
+
+- 5.3. Kết quả
+![Screenshot (442)](https://github.com/user-attachments/assets/dc62da60-b0ce-472f-83df-a786fc5f2f9c)
+
+
+
 
